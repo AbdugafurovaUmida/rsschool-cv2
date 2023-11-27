@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,700;1,400&display=swap');
+
+:root {
+  --dark-gray-color: #505050;
+  --ligth-gray-color: #777777;
+  --pink-color: #ffd6d2;
+  --font-size: 10px;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 1.6rem;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+        font-family: "Cabin", sans-serif;
+            line-height: 1.5;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1024px;
+    width: 100%;
+    font-size: 1.8rem;
+}
+
+.list{
+    padding-left: 40px;
+}
+
+.header{
+    background: var(--pink-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+
+.nav{
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav__list{
+       display: flex;
+       justify-content: flex-end;
+    padding: 16px 32px 16px 0;
+    margin-right: 10vw;
+
+
+}
+
+.nav__item{
+    list-style: none;
+}
+
+.nav__link{
+    display: block;
+    font-size: 1.2rem;
+    padding: 1rem;
+    text-decoration: none;
+    flex: 1;
+    vertical-align: middle;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--ligth-gray-color);
+    transition: all 0.3 ease-in-out;
+}
+
+.nav__link:hover{
+    opacity: 0.7;
+}
+
+.nav__link:active{
+    opacity: 0.3;
+}
+
+.wrapper{
+    font-family: "Cabin", sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    background-color: #ffffff;
+    box-shadow: 10px 10px 40px -1px rgba(0, 0, 0, 0.23);
+    margin-top: 140px;
+    margin-bottom: 140px;
+}
+
+.layout-2-columns{
+    display: flex;
+}
+
+.aside{
+    width: 42%;
+    color: var(--dark-gray-color);
+    background-color: var(--pink-color);
+}
+
+.aside__top{
+    padding: 30px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.aside__bottom{
+    padding: 0 40px;
+}
+
+.aside__title,.aside__subtitle{
+    font-size: 27px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.aside__img{
+    margin-top: 22px;
+        margin-bottom: 10px;
+        border: 10px solid var(--pink-color);
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+
+}
+
+.contacts__title{
+        margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    transform: translate(0, -50%);
+}
+
+.contacts__item{
+    margin-bottom: 10px;
+}
+
+.contacts__img{
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.contacts__link{
+    display: inline;
+    vertical-align: middle;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--dark-gray-color);
+}
+
+.left-content__title{
+    min-width: 136px;
+    max-width: fit-content;
+    margin: 40px auto 20px;
+    padding: 5px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+    background-color: var(--dark-gray-color);
+}
+
+.skills__item,.language__item{
+    margin-bottom: 10px;
+}
+
+.language__name{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.main{
+        width: 58%;
+    padding: 40px;
+        color: var(--ligth-gray-color);
+}
+
+.main__img{
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.main__title{
+        flex: 1;
+    vertical-align: middle;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--ligth-gray-color);
+    border-bottom: 2px solid var(--ligth-gray-color);
+}
+
+.main__text{
+        margin-bottom: 10px;
+    margin-left: 45px;
+        color: var(--ligth-gray-color);
+}
+
+.sub-header{
+        display: flex;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.about{
+        height: auto;
+}
+
+.courses .list, .projects .list{
+        list-style-type: disc;
+    margin-left: 45px;
+    margin-bottom: 30px;
+}
+
+.project-tile{
+    text-decoration: none;
+    color: var(--ligth-gray-color);
+    transition: all 0.3 ease-in-out;
+}
+
+.project-tile:hover{
+    text-decoration: underline;
+}
+
+
+.main__item{
+    margin-bottom: 10px;
+}
+
+.pre {
+    margin-left: -320px;
+    margin-right: -40px;
+    margin-top: 20px;
+    padding-left: 30px;
+    font-family: monospace;
+    font-size: 0.9rem;
+    background-color: #f5f5f5;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-size: 0.8rem;
+  color: #ffffff;
+  background-color: var(--dark-gray-color);
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.github-icon {
+  margin-right: 10px;
+}
+
+.my-github {
+  display: flex;
+  align-items: center;
+}
+
